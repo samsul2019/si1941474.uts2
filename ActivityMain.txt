@@ -1,0 +1,137 @@
+<?xml version=”1.0” encoding=”utf-8”?>
+<ScrollView xmlns:android=http://schemas.android.com/apk/res/android
+    Xmlns:app=http://schemas.android.com/apk/res-auto
+    Xmlns:tools=http://schemas.android.com/tools
+    Android:layout_width=”match_parent”
+    Android:layout_height=”match_parent”
+    Android:fillViewport=”true”
+    Tools:context=”.MainActivity”>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        Android:layout_width=”match_parent”
+        Android:layout_height=”match_parent”>
+
+        <TextView
+            Android:id=”@+id/tvTitle”
+            Android:layout_width=”wrap_content”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”24dp”
+            Android:layout_marginTop=”32dp”
+            Android:text=”Aplikasi Todo”
+            Android:textColor=”@color/black”
+            Android:textSize=”30sp”
+            Android:textStyle=”bold”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toTopOf=”parent”
+            Android:layout_marginLeft=”24dp” />
+
+        <TextView
+            Android:id=”@+id/tvTambah”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”24dp”
+            Android:layout_marginTop=”32dp”
+            Android:text=”Tambah Pekerjaan”
+            Android:textColor=”@color/black”
+            Android:textSize=”18sp”
+            Android:textStyle=”bold”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/tvTitle”
+            Android:layout_marginLeft=”24dp” />
+
+        <View
+            Android:id=”@+id/viewTambah”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”2dp”
+            Android:background=”@color/black”
+            Android:layout_marginStart=”16dp”
+            Android:layout_marginTop=”8dp”
+            Android:layout_marginEnd=”16dp”
+            App:layout_constraintEnd_toEndOf=”parent”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/tvTambah” />
+
+        <EditText
+            Android:id=”@+id/edtTambah”
+            Android:layout_width=”250dp”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”16dp”
+            Android:layout_marginTop=”24dp”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/viewTambah”
+            Android:layout_marginLeft=”16dp” />
+
+        <Button
+            Android:id=”@+id/btnTambah”
+            Android:layout_width=”100dp”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”16dp”
+            Android:layout_marginTop=”24dp”
+            Android:layout_marginEnd=”16dp”
+            Android:text=”Tambah”
+            App:layout_constraintEnd_toEndOf=”parent”
+            App:layout_constraintStart_toEndOf=”@+id/edtTambah”
+            App:layout_constraintTop_toBottomOf=”@+id/viewTambah” />
+
+        <TextView
+            Android:id=”@+id/tvBelum”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”24dp”
+            Android:layout_marginTop=”64dp”
+            Android:text=”Belum Dikerjakan”
+            Android:textColor=”@color/black”
+            Android:textSize=”18sp”
+            Android:textStyle=”bold”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/edtTambah”
+            Android:layout_marginLeft=”24dp” />
+
+        <View
+            Android:id=”@+id/viewBelum”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”2dp”
+            Android:background=”@color/black”
+            Android:layout_marginStart=”16dp”
+            Android:layout_marginTop=”8dp”
+            Android:layout_marginEnd=”16dp”
+            App:layout_constraintEnd_toEndOf=”parent”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/tvBelum” />
+
+        <ListView
+            Android:id=”@+id/lstView”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”16dp”
+            Android:layout_marginTop=”16dp”
+            Android:layout_marginEnd=”16dp”
+            App:layout_constraintTop_toBottomOf=”@+id/viewBelum” />
+
+        <TextView
+            Android:id=”@+id/tvSelesai”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”wrap_content”
+            Android:layout_marginStart=”24dp”
+            Android:layout_marginTop=”64dp”
+            Android:text=”Selesai Dikerjakan”
+            Android:textColor=”@color/black”
+            Android:textSize=”18sp”
+            Android:textStyle=”bold”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/lstView”
+            Android:layout_marginLeft=”24dp” />
+
+        <View
+            Android:id=”@+id/viewSelesai”
+            Android:layout_width=”match_parent”
+            Android:layout_height=”2dp”
+            Android:background=”@color/black”
+            Android:layout_marginStart=”16dp”
+            Android:layout_marginTop=”8dp”
+            Android:layout_marginEnd=”16dp”
+            App:layout_constraintEnd_toEndOf=”parent”
+            App:layout_constraintStart_toStartOf=”parent”
+            App:layout_constraintTop_toBottomOf=”@+id/tvSelesai” />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
